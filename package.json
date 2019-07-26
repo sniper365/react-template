@@ -16,7 +16,9 @@
     "generate-stats": "webpack --profile --json > ./bundleAnalyser/stats.json",
     "bundle-analyzer": "yarn run generate-stats && webpack-bundle-analyzer ./bundleAnalyser/stats.json",
     "test": "jest",
-    "server": "node  src/Server/server.js",
+    "server": "nodemon  dist/server.bundle.js",
+    "prod:server": "yarn run prod:build --env.project server --watch",
+    "server:run": "yarn run prod:build && yarn run prod:server --watch",
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
@@ -62,6 +64,7 @@
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.4",
     "webpack-dev-server": "^3.7.1",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
   }
 }
