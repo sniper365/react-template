@@ -16,7 +16,7 @@
     "generate-stats": "webpack --profile --json > ./bundleAnalyser/stats.json",
     "bundle-analyzer": "yarn run generate-stats && webpack-bundle-analyzer ./bundleAnalyser/stats.json",
     "test": "jest",
-    "server": "node  ./src/server/server.js",
+    "server": "node  src/Server/server.js",
     "test:coverage": "jest --coverage"
   },
   "dependencies": {

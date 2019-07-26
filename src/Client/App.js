@@ -1,6 +1,6 @@
 import React from "react";
 import ReactSVGComponent from "Components/ReactSVGComponent/ReactSVGComponent";
-import "css/main.css";
+import "src/css/main.css";
 const App = ()=><div>
 	<div className="container">
 		<h1>This is a heading</h1>

@@ -18,12 +18,12 @@ module.exports = ({ mode, presets } = { mode: 'dev', presets: [] }) => {
       },
       resolve: {
         alias: {
-          Components: path.resolve(__dirname, 'src/Components'),
-          css: path.resolve(__dirname, './src/css'),
+          Components: path.resolve(__dirname, './src/Client/Components'),
+          css: path.resolve(__dirname, './src/Client/css'),
           mocks: path.resolve(__dirname, './src/__mocks__'),
           utils: path.resolve(__dirname, './utils'),
           assets: path.resolve(__dirname, './assets'),
-          src: path.resolve(__dirname, './src')
+          src: path.resolve(__dirname, './src/Client')
         },
         modules: [path.resolve(__dirname, './src'), 'node_modules']
       },
