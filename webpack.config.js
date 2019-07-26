@@ -7,10 +7,10 @@ const nodeExternals = require("webpack-node-externals");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const clientModeConfig = env => require(`./webpack/webpack.${env}.js`)(env);
-const serverModeConfig = env =>
+const serverModeConfig = (env = "prod") =>
   require(`./webpack/webpack.server.${env}.js`)(env);
 
-module.exports = ({ mode, project } = { mode: "dev", project: "sever" }) => {
+module.exports = ({ mode, project } = { mode: "prod", project: "client" }) => {
   if (project === "server") {
     // bundling for sever projects
     return merge(
@@ -18,7 +18,7 @@ module.exports = ({ mode, project } = { mode: "dev", project: "sever" }) => {
         entry: path.resolve("./src/Server/server.js"),
         output: {
           filename: "server.bundle.js",
-          path: path.join(__dirname, "dist"),
+          path: path.join(__dirname, "ServerBundle"),
         },
         resolve: {
           alias: {
@@ -47,6 +47,7 @@ module.exports = ({ mode, project } = { mode: "dev", project: "sever" }) => {
         entry: "./index.js",
         output: {
           filename: "./client.bundle.js",
+          path: path.join(__dirname, "ClientBundle"),
         },
         resolve: {
           alias: {
