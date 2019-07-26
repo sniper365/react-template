@@ -113,7 +113,10 @@ module.exports = () => ({
       chunkFilename: '[id].[hash].css'
     }),
     new CompressionPlugin({
-      deleteOriginalAssets: true
+      deleteOriginalAssets: true,
+      algorithm: 'gzip',
+      threshold: 10240,
+      minRatio: 0.7
     })
   ]
 })

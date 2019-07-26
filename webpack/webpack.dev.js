@@ -78,12 +78,5 @@ module.exports = () => ({
       }
     ]
   },
-  plugins: [
-    new MiniCssExtractPlugin(),
-    new CompressionPlugin({
-      deleteOriginalAssets: true,
-      algorithm: 'gzip',
-      minRatio: 0.8
-    })
-  ]
+  plugins: [new MiniCssExtractPlugin()]
 })
