@@ -16,11 +16,13 @@
     "generate-stats": "webpack --profile --json > ./bundleAnalyser/stats.json",
     "bundle-analyzer": "yarn run generate-stats && webpack-bundle-analyzer ./bundleAnalyser/stats.json",
     "test": "jest",
+    "server": "node  ./src/server/server.js",
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "d3": "^5.9.7",
     "express": "^4.17.1",
+    "express-static-gzip": "^1.1.3",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
