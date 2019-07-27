@@ -1,6 +1,6 @@
 # ReactNode-ExpressBoilerplate
 
-A Full stack **React and Node.js** Boilerplate that is developed using **Webpack4, Babel**. 
+A Full stack **React and Node.js** Boilerplate that is developed using **React , Express.js Webpack4, Babel,EsLint and Jest**.  
 
 ##  Install
 ```
@@ -46,5 +46,18 @@ All the webp information got insipired from [web.dev](https://web.dev/serve-imag
  Client Side Run - yarn run prod:build
  Server Side Run - yarn run server-prod
 ```
-***Note-1) In production mode all source code files in .js or .css or .html will be minfied and compressed into gzip files using webpack compression algorithm , by default gzip  all 91% of browser supports gzip. sever side bundle will be only minfied.***  
-***Note-2) Certain plugins like imagemin are also been used image compression based on suggestion from [web.dev](https://web.dev/use-imagemin-to-compress-images).***
+***Note -1
+In production mode all source code files in .js or .css or .html will be minfied and compressed into gzip files using webpack compression algorithm , by default gzip  all 91% of browser supports gzip. sever side bundle will be only minfied.***  
+***Note - 2
+ Certain plugins like imagemin are also been used image compression based on suggestion from [web.dev](https://web.dev/use-imagemin-to-compress-images).***
+
+<hr/>
+
+## Testing
+
+Jest is a delightful JavaScript Testing Framework with a focus on simplicity. There is a ***mock*** folder inside ***src*** directory that is used for mock something like custom image etc. while writing automated test cases.
+
+#####  For Development 
+	`test:coverage - run all the test cases`
+
+
