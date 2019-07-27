@@ -4,7 +4,7 @@ const app = express();
 var options = {
 	enableBrotli: true,
 	orderPreference: ["br", "gz"],
-	setHeaders: function(res, path) {
+	setHeaders: function(res) {
 		res.setHeader("Cache-Control", "public, max-age=31536000");
 	},
 };
