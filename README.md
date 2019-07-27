@@ -2,7 +2,7 @@
 A React.js Production Template using Webpack, Babel and Jest still (under work).
 
 ## install
-`git clone  https://github.com/sujilnt/ReactBoilerplate`  <br/>
+`git clone  https://github.com/sujilnt/ReactNode-ExpressBoilerplate.git`  <br/>
 `yarn install`
 
 ### Commands
@@ -17,13 +17,13 @@ info Project commands
       (yarn run generate-stats-server:dev) & (webpack-bundle-analyzer ./bundleAnalyser/stats-server-dev.json)
    - `bundle-analyzer:server-prod` <br/>
       (yarn run generate-stats-server:prod) & (webpack-bundle-analyzer ./bundleAnalyser/stats-server-client.json)
-   - `covertimageWebP`
+   - `covertimageWebP` <br/>
       node utils/covertImgtoWebP.js
    - `dev:server` <br/>
       yarn run dev --env.project server
    - `devServer` <br/>
       yarn run webpack --env.mode dev && webpack-dev-server --env.mode dev --watch
-   - `prod:build` <br/>
+   - `prod:build ` <br/>
       yarn run webpack --env.mode prod
    - `prod:server` <br/>
       yarn run prod:build --env.project server --watch
@@ -31,7 +31,7 @@ info Project commands
       yarn run webpack --env.mode prod --watch
    - `server-dev` <br/>
       npm-run-all --parallel dev:server server-nodemon
-   - `server-nodemon`
+   - `server-nodemon` <br/>
       nodemon  ServerBundle/server.bundle.js
    - `server-prod` <br/>
       npm-run-all --parallel prod:server server-nodemon
