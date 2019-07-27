@@ -18,14 +18,16 @@
 		"bundle-analyzer:client-prod": "(yarn run generate-stats-client:prod) & (webpack-bundle-analyzer ./bundleAnalyser/stats-client-prod.json)",
 		"bundle-analyzer:client-dev": "(yarn run generate-stats-client:dev) & (webpack-bundle-analyzer ./bundleAnalyser/stats-client-dev.json)",
 		"test": "jest",
-		"server": "nodemon  ServerBundle/server.bundle.js",
+		"server-nodemon": "nodemon  ServerBundle/server.bundle.js",
 		"prod:server": "yarn run prod:build --env.project server --watch",
-		"server:run": "yarn run prod:build && ",
+		"dev:server": "yarn run dev --env.project server",
+		"server-prod": "npm-run-all --parallel prod:server server-nodemon",
+		"server-dev": "npm-run-all --parallel dev:server server-nodemon",
 		"test:coverage": "jest --coverage",
-		"generate-stats-server:dev": "webpack --env.project server --env.mode dev  --profile --json > ./bundleAnalyser/stats-server-dev.json",
-		"generate-stats-server:prod": "webpack --env.project server --env.mode prod  --profile --json > ./bundleAnalyser/stats-server-prod.json",
-		"generate-stats-client:dev": "webpack --env.project client --env.mode dev  --profile --json > ./bundleAnalyser/stats-client-dev.json",
-		"generate-stats-client:prod": "webpack --env.project client --env.mode prod  --profile --json > ./bundleAnalyser/stats-client-prod.json"
+		"generate-stats-server:dev": "webpack --env.project server --env.mode dev --profile --json > ./bundleAnalyser/stats-server-dev.json",
+		"generate-stats-server:prod": "webpack --env.project server --env.mode prod --profile --json > ./bundleAnalyser/stats-server-prod.json",
+		"generate-stats-client:dev": "webpack --env.project client --env.mode dev --profile --json > ./bundleAnalyser/stats-client-dev.json",
+		"generate-stats-client:prod": "webpack --env.project client --env.mode prod --profile --json > ./bundleAnalyser/stats-client-prod.json"
 	},
 	"dependencies": {
 		"d3": "^5.9.7",
