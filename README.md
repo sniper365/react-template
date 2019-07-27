@@ -10,19 +10,20 @@ A React.js Production Template using Webpack, Babel and Jest still (under work).
 yarn run v1.17.3
 info Project commands
    
-#### `Webpack Bundle Analyzer` <br/>
-      A Visualize size of webpack output files with an interactive zoomable treemap.
-      dev - development mode<br/>
-      prod - development mode <br/>
-      client - client bundles only will be analysed based on dev or prod mode. <br/> 
-      server - server bundle only will be analysed based on dev or prod mode . <br/> 
-      #### commands
-      `bundle-analyzer:client-dev` <br/>
-      `bundle-analyzer:client-prod` <br/>
-      `bundle-analyzer:server-dev` <br/>
-      `bundle-analyzer:server-prod` <br/>
+#### Webpack Bundle Analyzer <br/>
+      A plugin that Visualizes the size of webpack output files with an interactive zoomable treemap.
+      dev - development mode
+      prod - development mode
+      client - client bundles only will be analysed based on dev or prod mode. 
+      server - server bundle only will be analysed based on dev or prod mode .
+
+##### Commands for webpack Analyser
+      `bundle-analyzer:client-dev` 
+      `bundle-analyzer:client-prod` 
+      `bundle-analyzer:server-dev` 
+      `bundle-analyzer:server-prod`
     
-  #### - ` covertimageWebP` <br/>
+####  ` covertimageWebP` <br/>
        `
        Converting all the images into webp format.<p>
        node utils/covertImgtoWebP.js
