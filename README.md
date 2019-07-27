@@ -13,42 +13,29 @@ info Project commands
       (yarn run generate-stats-client:dev) & (webpack-bundle-analyzer ./bundleAnalyser/stats-client-dev.json) 
    - `bundle-analyzer:client-prod` <br/>
       (yarn run generate-stats-client:prod) & (webpack-bundle-analyzer ./bundleAnalyser/stats-client-prod.json)
-   - bundle-analyzer:server-dev
+   - `bundle-analyzer:server-dev` <br/>
       (yarn run generate-stats-server:dev) & (webpack-bundle-analyzer ./bundleAnalyser/stats-server-dev.json)
-   - bundle-analyzer:server-prod
+   - `bundle-analyzer:server-prod` <br/>
       (yarn run generate-stats-server:prod) & (webpack-bundle-analyzer ./bundleAnalyser/stats-server-client.json)
-   - covertimageWebP
+   - `covertimageWebP`
       node utils/covertImgtoWebP.js
-   - dev
-      yarn run webpack --env.mode dev --watch
-   - dev:server
+   - `dev:server` <br/>
       yarn run dev --env.project server
-   - devServer
+   - `devServer` <br/>
       yarn run webpack --env.mode dev && webpack-dev-server --env.mode dev --watch
-   - generate-stats-client:dev
-      webpack --env.project client --env.mode dev --profile --json > ./bundleAnalyser/stats-client-dev.json
-   - generate-stats-client:prod
-      webpack --env.project client --env.mode prod --profile --json > ./bundleAnalyser/stats-client-prod.json
-   - generate-stats-server:dev
-      webpack --env.project server --env.mode dev --profile --json > ./bundleAnalyser/stats-server-dev.json
-   - generate-stats-server:prod
-      webpack --env.project server --env.mode prod --profile --json > ./bundleAnalyser/stats-server-prod.json
-   - prod:build
+   - `prod:build` <br/>
       yarn run webpack --env.mode prod
-   - prod:server
+   - `prod:server` <br/>
       yarn run prod:build --env.project server --watch
-   - prod:watch
+   - `prod:watch` <br/>
       yarn run webpack --env.mode prod --watch
-   - server-dev
+   - `server-dev` <br/>
       npm-run-all --parallel dev:server server-nodemon
-   - server-nodemon
+   - `server-nodemon`
       nodemon  ServerBundle/server.bundle.js
-   - server-prod
+   - `server-prod` <br/>
       npm-run-all --parallel prod:server server-nodemon
-   - test
-      jest
-   - test:coverage
+   - `test:coverage - run all the test cases` <br/>
       jest --coverage
-   - webpack
-      webpack
+
 
