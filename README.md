@@ -1,5 +1,5 @@
-# ReactBoilerplateExpress
-A React.js/Express Production Template using Webpack, Babel and Jest. T
+# ReactBoilerplate
+A React.js Production Template using Webpack, Babel and Jest still (under work).
 
 ## install
 `git clone  https://github.com/sujilnt/ReactNode-ExpressBoilerplate.git`  <br/>
@@ -10,18 +10,23 @@ A React.js/Express Production Template using Webpack, Babel and Jest. T
 yarn run v1.17.3
 info Project commands
    
-   - `bundle-analyzer:client-dev` <br/>
-      <p></p>
-      (yarn run generate-stats-client:dev) & (webpack-bundle-analyzer ./bundleAnalyser/stats-client-dev.json) 
-   - `bundle-analyzer:client-prod` <br/>
-      (yarn run generate-stats-client:prod) & (webpack-bundle-analyzer ./bundleAnalyser/stats-client-prod.json)
-   - `bundle-analyzer:server-dev` <br/>
-      (yarn run generate-stats-server:dev) & (webpack-bundle-analyzer ./bundleAnalyser/stats-server-dev.json)
-   - `bundle-analyzer:server-prod` <br/>
-      (yarn run generate-stats-server:prod) & (webpack-bundle-analyzer ./bundleAnalyser/stats-server-client.json)
-  #### -  `covertimageWebP` <br/>
-      converting all the images into webp format.
-      `node utils/covertImgtoWebP.js`
+#### `Webpack Bundle Analyzer` <br/>
+      A Visualize size of webpack output files with an interactive zoomable treemap.
+      dev - development mode<br/>
+      prod - development mode <br/>
+      client - client bundles only will be analysed based on dev or prod mode. <br/> 
+      server - server bundle only will be analysed based on dev or prod mode . <br/> 
+      #### commands
+      `bundle-analyzer:client-dev` <br/>
+      `bundle-analyzer:client-prod` <br/>
+      `bundle-analyzer:server-dev` <br/>
+      `bundle-analyzer:server-prod` <br/>
+    
+  #### - ` covertimageWebP` <br/>
+       `
+       Converting all the images into webp format.<p>
+       node utils/covertImgtoWebP.js
+       `
    - `dev:server` <br/>
       <p></p> 
       yarn run dev --env.project server
