@@ -1,5 +1,5 @@
-# ReactBoilerplate
-A React.js Production Template using Webpack, Babel and Jest still (under work).
+# ReactBoilerplateExpress
+A React.js/Express Production Template using Webpack, Babel and Jest. T
 
 ## install
 `git clone  https://github.com/sujilnt/ReactNode-ExpressBoilerplate.git`  <br/>
@@ -19,8 +19,8 @@ info Project commands
       (yarn run generate-stats-server:dev) & (webpack-bundle-analyzer ./bundleAnalyser/stats-server-dev.json)
    - `bundle-analyzer:server-prod` <br/>
       (yarn run generate-stats-server:prod) & (webpack-bundle-analyzer ./bundleAnalyser/stats-server-client.json)
-   - `#### covertimageWebP` <br/>
-      <p>converting all the images into webp format.<p>
+  #### -  `covertimageWebP` <br/>
+      converting all the images into webp format.
       `node utils/covertImgtoWebP.js`
    - `dev:server` <br/>
       <p></p> 
