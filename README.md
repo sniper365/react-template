@@ -63,6 +63,3 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity. Th
 	`yarn run test:coverage`
 
 
-## License
-
-The code is available under the [MIT license](License.txt).
