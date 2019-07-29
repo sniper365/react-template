@@ -40,6 +40,8 @@ All the webp information got insipired from [web.dev](https://web.dev/serve-imag
 ```  
  Client Side Run - yarn run client-dev:watch
  Server Side Run - yarn run server-dev:build 
+ or 
+ yarn run project (running both server and client side)
 ```
 #####  For Production  
 ```  
