@@ -65,4 +65,4 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity. Th
 
 ## License
 
-The code is available under the [MIT license](LICENSE.txt).
+The code is available under the [MIT license](License.txt).
