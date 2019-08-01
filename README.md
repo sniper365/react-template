@@ -43,21 +43,23 @@ All the webp information got insipired from [web.dev](https://web.dev/serve-imag
 
 ```
  Client Side Run - yarn run client-dev:watch
- Server Side Run - yarn run server-dev
+ Server Side Run - yarn run server-dev:build
+ or
+	yarn run project (running both server and client side)
 ```
 
 ##### For Production
 
 ```
  Client Side Run - yarn run client-prod:build
- Server Side Run - yarn run server-prod
+ Server Side Run - yarn run server-prod:build
 ```
 
 <hr/>
 
-**_Note -1
+**_Note -1 <br/>
 In production mode all source code files in .js or .css or .html will be minfied and compressed into gzip files using webpack compression algorithm , by default gzip all 91% of browser supports gzip. sever side bundle will be only minfied._**  
-**_Note - 2
+**_Note - 2 <br/>
 Certain plugins like imagemin are also been used image compression based on suggestion from [web.dev](https://web.dev/use-imagemin-to-compress-images)._**
 
 <hr/>
