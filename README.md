@@ -1,6 +1,6 @@
 # ReactNode-ExpressBoilerplate
 
-A Full stack **React and Node.js** Boilerplate that is developed using **React , Express.js Webpack4, Babel,EsLint and Jest**.
+A Full stack **React and Node.js** Boilerplate that is developed using **React , Express.js Webpack4, Babel,EsLint, and Jest**.
 
 ## Install
 
