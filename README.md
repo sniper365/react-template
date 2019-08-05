@@ -53,6 +53,8 @@ All the webp information got insipired from [web.dev](https://web.dev/serve-imag
 ```
  Client Side Run - yarn run client-prod:build
  Server Side Run - yarn run server-prod:build
+  or
+ both build - yarn run build
 ```
 
 <hr/>

@@ -8,7 +8,7 @@ var options = {
 		res.setHeader("Cache-Control", "public, max-age=31536000");
 	},
 };
-console.log("test", app);
+console.log("testgfgbgf", app);
 app.use(expressStaticGzip("./ClientBundle", options));
 app.listen("9001", () => {
 	console.log("App started at port number 9000");
