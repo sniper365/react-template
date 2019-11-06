@@ -11,7 +11,7 @@ yarn install
 
 ## Features and Commands
 
-### `Webpack Bundle Analyzer`
+### `Webpack Bundle visualisation`
 
 A plugin that Visualizes the size of webpack output files with an interactive zoomable treemap. - **dev** - development mode - **prod** - development mode - **client** - client bundles only will be analysed based on dev or prod mode. - **server** - server bundle only will be analysed based on dev or prod mode .
 
