@@ -58,7 +58,6 @@ All the webp information got insipired from [web.dev](https://web.dev/serve-imag
 <hr/>
 
 
-
 <hr/>
 
 ## Testing
