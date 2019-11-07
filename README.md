@@ -57,10 +57,7 @@ All the webp information got insipired from [web.dev](https://web.dev/serve-imag
 
 <hr/>
 
-**_Note -1 <br/>
-In production mode all source code files in .js or .css or .html will be minfied and compressed into gzip files using webpack compression algorithm , by default gzip all 91% of browser supports gzip. sever side bundle will be only minfied._**  
-**_Note - 2 <br/>
-Certain plugins like imagemin are also been used image compression based on suggestion from [web.dev](https://web.dev/use-imagemin-to-compress-images)._**
+
 
 <hr/>
 
